@@ -36,7 +36,7 @@ https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVe
 ^https://cdn.altstore.io/file/altstore/apps.json url script-response-body nampham/altstore.js
 
 #Speedtest
-^https:\/\/p.+-buy\.itunes\.apple\.com\/WebObjects\/MZFinance.woa\/wa\/inAppRegrantPurchaseHistory url script-response-body nampham/speedtest.js
+;^https:\/\/p.+-buy\.itunes\.apple\.com\/WebObjects\/MZFinance.woa\/wa\/inAppRegrantPurchaseHistory url script-response-body nampham/speedtest.js
 
 #iQIYI
 ^https?://cards\.iqiyi\.com/views_home/\d.0/qy_home url script-response-body nampham/iQIYI.js
