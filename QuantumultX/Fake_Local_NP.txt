@@ -7,7 +7,7 @@ hostname = *shopee.vn, api.ipastore.me, *.my10api.com, claritywallpaper.com, pay
 ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body nampham/91.js
 
 #克拉壁纸  解锁付费壁纸 (By @Dachaw)
-^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body nzw9314/Script/clarity.js
+^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body nampham/clarity.js
 
 #SoloLearn Unlock PRO & Platinum Moderator (By @sunshy)
 https:\/\/api\.sololearn\.com\/(authenticateDevice|challenge\/GetContestFeed|Profile\/GetProfile)$ url script-response-body nampham/sololearn.js
