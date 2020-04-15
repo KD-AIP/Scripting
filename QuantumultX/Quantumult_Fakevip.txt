@@ -33,8 +33,8 @@ https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantu
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumult-FB.conf, tag=🇻🇳hostsVN-FB, force-policy=Chặn FB, enabled=true
 
 [rewrite_remote]
-https://raw.githubusercontent.com/namcyeon/Scripting/master/QuantumultX/Fake_Local.txt, tag=Fake iAP Local Lãng Khách, enabled=true
-https://raw.githubusercontent.com/namcyeon/Scripting/master/QuantumultX/Fake_Local_NP.txt, tag=Fake iAP Local NP, enabled=true
+QuantumultX/Fake_Local.txt, tag=Fake iAP Local Lãng Khách, enabled=true
+QuantumultX/Fake_Local_NP.txt, tag=Fake iAP Local NP, enabled=true
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hostsVN-quantumultX-rewrite.conf, tag=🇻🇳hostsVN, enabled=true
 
 [server_local]
