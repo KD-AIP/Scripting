@@ -1,7 +1,6 @@
-hostname = *shopee.vn, api.ipastore.me, *.my10api.com, claritywallpaper.com, pay.wecut.com, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, cdn.altstore.io, cards.iqiyi.com, 
-
+hostname = *shopee.vn, api.ipastore.me, *.my10api.com, claritywallpaper.com, pay.wecut.com, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, cdn.altstore.io, cards.iqiyi.com, *-buy.itunes.apple.com
 #Shopee
-^https:\/\/shopee\.vn\/me\/setting url script-response-body nampham/shopee_cookie.js
+^https:\/\/mall\.shopee\.vn\/api\/v1\/account_info url script-request-header nampham/shopee_cookie.js
 
 #NamPham
 # 91短视频
@@ -37,7 +36,7 @@ https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVe
 ^https://cdn.altstore.io/file/altstore/apps.json url script-response-body nampham/altstore.js
 
 #Speedtest
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body nampham/speedtest.js
+^https:\/\/p.+-buy\.itunes\.apple\.com url script-response-body nampham/speedtest.js
 
 #iQIYI
 ^https?://cards\.iqiyi\.com/views_home/\d.0/qy_home url script-response-body nampham/iQIYI.js
