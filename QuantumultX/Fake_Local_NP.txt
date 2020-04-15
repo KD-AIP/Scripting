@@ -1,0 +1,43 @@
+hostname = *shopee.vn, api.ipastore.me, *.my10api.com, claritywallpaper.com, pay.wecut.com, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, cdn.altstore.io, cards.iqiyi.com, 
+
+#Shopee
+^https:\/\/shopee\.vn\/me\/setting url script-response-body nampham/shopee_cookie.js
+
+#NamPham
+# 91短视频
+^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body nampham/91.js
+
+#克拉壁纸  解锁付费壁纸 (By @Dachaw)
+^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) url script-response-body nzw9314/Script/clarity.js
+
+#SoloLearn Unlock PRO & Platinum Moderator (By @sunshy)
+https:\/\/api\.sololearn\.com\/(authenticateDevice|challenge\/GetContestFeed|Profile\/GetProfile)$ url script-response-body nampham/sololearn.js
+
+# YouTube去广告
+# 自行添加主机名
+^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
+^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject-img
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject-img
+^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject-img
+^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite url reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject-img
+^https?:\/\/.+\.youtube\.com\/pagead\/ url reject-img
+^https?:\/\/.+\.youtube\.com\/ptracking url reject-img
+
+#CPU Dasher破解(By @syzzzf)
+#需要ios13 复制放本地 恢复购买后禁用掉
+^https:\/\/p.+-buy\.itunes\.apple\.com\/WebObjects\/MZFinance.woa\/wa\/inAppRegrantPurchaseHistory url script-response-body nampham/cpudasher.js
+
+#轻颜相机 & ulike & 蒸汽波相机(vaporcam)三合一 解锁VIP(By @s y & Alex0510)
+https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info) url script-response-body nampham/qyxj.js
+
+#Altstore
+^https://cdn.altstore.io/file/altstore/apps.json url script-response-body nampham/altstore.js
+
+#Speedtest
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body nampham/speedtest.js
+
+#iQIYI
+^https?://cards\.iqiyi\.com/views_home/\d.0/qy_home url script-response-body nampham/iQIYI.js
