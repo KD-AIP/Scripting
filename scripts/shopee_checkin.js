@@ -113,7 +113,6 @@ http-request ^https:\/\/shopee\.vn\/me\/setting max-size=0,script-path=shopee_ge
 
 MITM = shopee.vn
 */
-
   var shopeeUrl = {
     url: 'https://shopee.vn/mkt/coins/api/v2/checkin',
     headers: {
@@ -126,7 +125,7 @@ $notification.post("Shopee checkin", "", "Lỗi kết nối‼️")
     $done(); 
   } 
  else{
- if(response.status == 200)
+ if(response.statusCode == 200)
 {
 let obj= JSON.parse(data);
 if(obj["data"]["success"])
