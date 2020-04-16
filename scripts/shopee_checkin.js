@@ -113,31 +113,31 @@ http-request ^https:\/\/shopee\.vn\/me\/setting max-size=0,script-path=shopee_ge
 
 MITM = shopee.vn
 */
-  var shopeeUrl = {
+var shopeeUrl = {
     url: 'https://shopee.vn/mkt/coins/api/v2/checkin',
     headers: {
       Cookie: $prefs.valueForKey("CookieSP"),
-    }
   }
+}
 $httpClient.post(shopeeUrl, function(error, response, data){
-  if (error) {
-$notification.post("Shopee checkin", "", "Lỗi kết nối‼️")
-    $done(); 
-  } 
- else{
- if(response.statusCode == 200)
-{
-let obj= JSON.parse(data);
-if(obj["data"]["success"])
-{
-var user = obj["data"]["username"];
-var coins = obj["data"]["increase_coins"];
-$notification.post("Shopee " + user, "", "Đã nhận được " + coins + "💰");
-    $done();
-}
-}
-else{
-$notification.post("Shopee Cookie đã hết hạn‼️", "", "Hãy đăng nhập lại 🔓");
-}
-}
+    if (error) {
+        $notification.post("Shopee checkin", "", "Lỗi kết nối‼️")
+        $done(); 
+    } 
+    else{
+        if(response.statusCode == 200)
+        {
+            let obj= JSON.parse(data);
+            if(obj["data"]["success"])
+            {
+                var user = obj["data"]["username"];
+                var coins = obj["data"]["increase_coins"];
+                $notification.post("Shopee " + user, "", "Đã nhận được " + coins + "💰");
+                $done();
+            }
+        }
+        else{
+            $notification.post("Shopee Cookie đã hết hạn‼️", "", "Hãy đăng nhập lại 🔓");
+        }
+    }
 });

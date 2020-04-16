@@ -8,11 +8,11 @@ http-request ^https:\/\/shopee\.vn\/me\/setting max-size=0,script-path=shopee_ge
 
 MITM = shopee.vn
 */
-    $notification = {
-        post: (title, subTitle, detail) => {
-            $notify(title, subTitle, detail);
-        }
-    }
+$notification = {
+  post: (title, subTitle, detail) => {
+    $notify(title, subTitle, detail);
+  }
+}
 
 if ($request.headers['Cookie']) {
   var headerSP = $request.headers['Cookie'];
@@ -20,7 +20,7 @@ if ($request.headers['Cookie']) {
   if (!cookie){
     $notification.post("Shopee Cookie lỗi‼️", "", "Đăng nhập lại")
   } else {
-    $notification.post("Shopee  Cookie done🎉🎉", "", "")
+    $notification.post("Shopee Cookie done🎉🎉", "", "")
   }
 } else {
   $notification.post("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại")
