@@ -53,3 +53,9 @@ https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVe
 
 #endel
 ^https:\/\/api-production\.endel\.io\/.*\/user$ url script-response-body nampham/endel.js
+
+#buyhack
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body nampham/buy.itunes.apple.com.js
+
+# Cercube
+^https:\/\/api-v5\.cercube\.com\/license url script-response-body nampham/cercube.js
