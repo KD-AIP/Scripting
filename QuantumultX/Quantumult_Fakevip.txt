@@ -7,10 +7,14 @@ udp_whitelist=53, 1024-49151
 ;excluded_routes= 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
 ;icmp_auto_reply=true
 [dns]
+server=119.29.29.29
 server=1.1.1.1
 server=1.0.0.1
 server=8.8.8.8
 server=8.8.4.4
+server=/iosapps.itunes.apple.com/119.29.29.29
+server=/*.youtube.com/8.8.8.8
+server=/*.facebook.com/1.1.1.1
 
 [policy]
 static=BẬT, reject, img-url=https://github.com/Koolson/Qure/raw/master/IconSet/Direct.png
@@ -75,6 +79,10 @@ force_sni_domain_name = true
 ;^https?:\/\/app\.iosgods.com\/store\/api\/auth\/login url script-response-body nampham/iosgods.js
 ;https://eh.supermembers.net/game/mail/read url 302 https://demo5.wsas.vn/tiny/confirm.json
 ;https://eh.supermembers.net/game/mail/list url 302 https://demo5.wsas.vn/tiny/mail.json
+
+#Block OTA
+(assets)\/(iOS.+DeveloperSeed)\/(com_apple_MobileAsset_SoftwareUpdate.+) url 302 $1\/tvOS12DeveloperSeed\/$3
+(assets)\/(com_apple_MobileAsset_SoftwareUpdate.+) url 302 $1\/tvOS12DeveloperSeed\/$2
 
 
 [task_local]

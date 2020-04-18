@@ -1,4 +1,4 @@
-hostname = *shopee.vn, api.ipastore.me, *.my10api.com, claritywallpaper.com, pay.wecut.com, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, cdn.altstore.io, cards.iqiyi.com, *-buy.itunes.apple.com, api.lichviet.org, ssl-api.itranslateapp.com, *.grammarly.com, api-production.endel.io,
+hostname = *shopee.vn, api.ipastore.me, *.my10api.com, claritywallpaper.com, pay.wecut.com, commerce-.*api.faceu.mobi, commerce-api.faceu.mobi, cdn.altstore.io, cards.iqiyi.com, *-buy.itunes.apple.com, api.lichviet.org, ssl-api.itranslateapp.com, *.grammarly.com, api-production.endel.io, oauth.reddit.com, api.faceapp.io,
 
 #Shopee
 ^https:\/\/mall\.shopee\.vn\/api\/v1\/account_info url script-request-header nampham/shopee_cookie.js
@@ -59,3 +59,10 @@ https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVe
 
 # Cercube
 ;^https:\/\/api-v5\.cercube\.com\/license url script-response-body nampham/cercube.js
+
+# Reddit
+^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json url script-response-body nampham/reddit.js
+
+# Faceapp
+^https?:\/\/api\.faceapp\.io(.*)\/api\/v3.0\/auth\/user\/credentials url script-response-header nampham/faceapp_header.js
+^https?:\/\/api\.faceapp\.io(.*)\/api\/v3.0\/auth\/user\/credentials url script-response-body nampham/faceapp_body.js
