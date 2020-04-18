@@ -61,8 +61,11 @@ https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVe
 ;^https:\/\/api-v5\.cercube\.com\/license url script-response-body nampham/cercube.js
 # youtube++去除底部横幅
 ^https:\/\/api-v5\.cercube\.com\/account url script-response-body nampham/cercube.js
+^https:\/\/api\.cercube\.com\/v2\/user url script-response-body nampham/cercube.js
+
 #srlink  vpn下载:https://apps.apple.com/us/app/srlink/id1294982298
 ^http:\/\/abc\.vpncenters\.com\/api\/user url script-response-body nampham/srlink.js
+
 # Reddit
 ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json url script-response-body nampham/reddit.js
 
