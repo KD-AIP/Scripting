@@ -1,0 +1,54 @@
+{
+  "policyMoneMenu": {
+    "Thủ công Xiaobai (nhóm thủ công đơn)": "simple",
+    "Máy ma thuật (không nhân rộng)": "hua",
+    "Máy ma thuật (sao chép máy ma thuật)": "hua_re"
+  },
+  "policyMoneList": [
+    "Thủ công Xiaobai (nhóm thủ công đơn)",
+    "Máy ma thuật (không nhân rộng)",
+    "Máy ma thuật (sao chép máy ma thuật)"
+  ],
+  "zonePolicyTypeMenu": {
+    "Chuyển đổi tự động": "auto",
+    "Chuyển đổi dự phòng": "fallback",
+    "Cả hai loại": "both",
+    "  Không cần tạo  ": "none"
+  },
+  "zonePolicyTypeList": [
+    "Chuyển đổi tự động",
+    "Chuyển đổi dự phòng",
+    "Cả hai loại",
+    "  Không cần tạo  "
+  ],
+  "loonInfo": {
+    "ver": "0.3.1",
+    "uptflg": "0",
+    "log": "增加可以从loon的导出菜单更新预设js脚本的功能",
+    "url": "https://www.icloud.com/shortcuts/05772abe3db546ecb7269173fe2e055f",
+    "upt_date": null
+  },
+  "hist": [
+    {
+      "ver": "0.1",
+      "uptflg": "1",
+      "log": "初版",
+      "url": "https://www.icloud.com/shortcuts/e2ba7f660bee4d9da78990efc01f9f48"
+    },
+    {
+      "ver": "0.2",
+      "uptflg": "1",
+      "log": "更新可选预设脚本, 修复bug",
+      "url": "https://www.icloud.com/shortcuts/75d009fc6db8475bbe8133b45dce09e9"
+    }
+  ],
+  "zoneMenu": {
+    "🇭🇰香港": "hk",
+    "🇨🇳台湾": "tw",
+    "🇯🇵日本": "jp",
+    "🇺🇸美国": "us",
+    "🇸🇬新加坡": "sg",
+    "🇰🇷韩国": "kr",
+    "🇷🇺俄罗斯": "ru"
+  }
+}
