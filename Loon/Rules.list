@@ -1,0 +1,78 @@
+# Facebook
+DOMAIN-KEYWORD,facebook
+DOMAIN-KEYWORD,fbcdn
+USER-AGENT,*MoMo*
+DOMAIN,ocsp.apple.com
+USER-AGENT,%E5%9C%B0%E5%9B%BE*
+USER-AGENT,%E8%AE%BE%E7%BD%AE*
+USER-AGENT,*com.apple.mobileme.fmip1
+USER-AGENT,*WeatherFoundation*
+USER-AGENT,AppleNews*
+USER-AGENT,AppStore*
+USER-AGENT,com.apple.appstored*
+USER-AGENT,com.apple.geod*
+USER-AGENT,com.apple.Maps
+USER-AGENT,com.apple.news*
+USER-AGENT,FindMyFriends*
+USER-AGENT,FindMyiPhone*
+USER-AGENT,FMDClient*
+USER-AGENT,FMFD*
+USER-AGENT,fmflocatord*
+USER-AGENT,geod*
+USER-AGENT,locationd*
+USER-AGENT,Maps*
+USER-AGENT,TestFlight*
+DOMAIN,apple.comscoreresearch.com
+DOMAIN-SUFFIX,apple.cn
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple.news
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mzstatic.com
+# > Apple News
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN,gspe1-ssl.ls.apple.com
+USER-AGENT,AppleNews*
+DOMAIN,gateway.icloud.com
+DOMAIN-SUFFIX,apple.news
+DOMAIN,news-client.apple.com
+DOMAIN,news-edge.apple.com
+DOMAIN,news-events.apple.com
+DOMAIN,apple.comscoreresearch.com
+DOMAIN,gdmf.apple.com
+DOMAIN,gdmf.apple.com.akadns.net
+DOMAIN,mesu.apple.com
+DOMAIN,mesu-cdn.apple.com.akadns.net
+DOMAIN,mesu-cdn.origin-apple.com.akadns.net
+DOMAIN,mesu.g.aaplimg.com
+DOMAIN,appldnld.apple.com
+DOMAIN,appldnld.apple.com.akadns.net
+USER-AGENT,Google.Drive*
+USER-AGENT,com.google.Drive*
+USER-AGENT, %E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*
+DOMAIN-SUFFIX,docs.google.com
+//My Viettel
+IP-CIDR,171.244.149.206/32
+DOMAIN-SUFFIX,vietteltelecom.vn
+IP-CIDR,10.60.102.165/32
+USER-AGENT,My%20Viettel*
+# > Fast
+DOMAIN-SUFFIX,fast.com
+
+# > Speedtest
+USER-AGENT,SpeedTest*
+DOMAIN-KEYWORD,speedtest
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,ooklaserver.net
+URL-REGEX,speedtest\d.macau.ctm.net:8080
+DOMAIN-SUFFIX,88-f.net
+DOMAIN,st.pautina-telecom.ru
+DOMAIN-SUFFIX,goodnet.su
+# > YouTube
+USER-AGENT,com.google.ios.youtube*
+USER-AGENT,YouTube*,YouTube
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN,youtubei.googleapis.com

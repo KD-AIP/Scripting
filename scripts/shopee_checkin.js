@@ -1,5 +1,3 @@
-
-
 //Smart Qx&Surge 
 let isQuantumultX = $task !== undefined;
 let isSurge = $httpClient !== undefined;
