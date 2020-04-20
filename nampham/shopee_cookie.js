@@ -113,7 +113,7 @@ if (isSurge) {
         $notification.post(title, subTitle, detail);
     }
 }
-
+console.log('Lấy Cookie Shopee');
 if ($request.headers['Cookie']) {
   var headerSP = $request.headers['Cookie'];
   var cookie = $prefs.setValueForKey(headerSP, "CookieSP");

@@ -1,0 +1,17 @@
+#!name=Custom script NP
+[Script]
+# SHOPEE
+http-request ^https:\/\/mall\.shopee\.vn\/api\/v1\/account_info script-path=https://github.com/namcyeon/Scripting/blob/master/nampham/shopee_cookie.js,script-update-interval=86400
+
+# ALTSTORE
+http-request ^https://cdn.altstore.io/file/altstore/apps.json script-path=https://raw.githubusercontent.com/namcyeon/Scripting/master/nampham/altstore.js,script-update-interval=86400
+
+# LICHVIET
+http-request ^https:\/\/api\.lichviet\.org\/user\/premiumstatus$ script-path=https://raw.githubusercontent.com/namcyeon/Scripting/master/nampham/lichviet.js,script-update-interval=86400
+http-request ^https:\/\/api\.lichviet\.org\/user\/linkdetail$ script-path=https://raw.githubusercontent.com/namcyeon/Scripting/master/nampham/lichviet2.js,script-update-interval=86400
+
+# GRAMMALY
+http-request ^https:\/\/subscription\.grammarly\.com\/api\/v1$ script-path=https://raw.githubusercontent.com/namcyeon/Scripting/master/nampham/grammarly.js,script-update-interval=86400
+
+# REDDIT
+http-request ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json script-path=https://raw.githubusercontent.com/namcyeon/Scripting/master/nampham/reddit.js,script-update-interval=86400
